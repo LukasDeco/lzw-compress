@@ -47,7 +47,7 @@ pub mod lzw {
         compressed
     }
 
-    pub fn decompress(mut data: &[u32]) -> Vec<u8> {
+    pub fn decompress(data: &[u32]) -> Vec<u8> {
         // Build the initial dictionary with single-byte sequences.
         let mut dictionary: HashMap<u32, Vec<u8>> =
             (0u32..=255).map(|i| (i, vec![i as u8])).collect();
