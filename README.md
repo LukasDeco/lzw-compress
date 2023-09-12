@@ -37,7 +37,7 @@ To use this library in your Rust project, add it as a dependency in your `Cargo.
 lzw-compression = "0.1.0"
 ```
 
-Or call `cargo add lzw-compression``
+Or call `cargo add lzw-compression`
 
 ### Compression
 
@@ -56,3 +56,7 @@ let compressed_data = vec![1, 2, 3, 4, 1, 2, 3, 5];
 let decompressed_data = decompress(&compressed_data);
 println!("Decompressed data: {:?}", decompressed_data);
 ```
+
+## License
+
+This library is licensed under the [MIT License](LICENSE).
