@@ -1,7 +1,10 @@
 [package]
 name = "lzw-compress"
-version = "0.1.0"
+description = "This Rust library provides a simple and efficient implementation of the LZW data compression algorithm. LZW is a widely used compression algorithm that can be used to reduce the size of data for storage or transmission."
+version = "1.0.0"
 edition = "2021"
+repository = "https://github.com/LukasDeco/lzw-compress"
+authors = ["Lukas deConantsesznak"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
