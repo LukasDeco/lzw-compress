@@ -54,8 +54,7 @@ pub mod lzw {
 
         let mut result = Vec::new();
 
-        let mut current_code = data[0];
-        let mut entry = dictionary[&current_code].clone();
+        let mut entry = dictionary[&data[0]].clone();
         result.extend_from_slice(&entry);
 
         for &code in &data[1..] {
@@ -74,8 +73,6 @@ pub mod lzw {
 
             dictionary.insert(dictionary.len() as u32, entry.clone());
             result.extend_from_slice(new_entry.as_ref().unwrap());
-
-            current_code = code;
         }
 
         result
